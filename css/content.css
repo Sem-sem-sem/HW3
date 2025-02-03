@@ -1,0 +1,52 @@
+
+
+.gbutton {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(255, 0, 0);
+    background: black;
+    border: 2px solid transparent;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+}
+
+.gbutton::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/butt.jpg);
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+  } 
+
+.gbutton:hover::before {
+    opacity: 1;
+  }
+
+.gbutton:hover {
+    border-color: rgba(0, 255, 255, 0.8);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.8);
+  }
+
+.flipbutton {
+    position: absolute;
+    left: 50%;
+    width: 17%;
+    height: 23%;
+    border-radius: 15%;
+    background-color: #fff;
+    top: 20%;
+    box-shadow: 14px 15px 11px 3px rgba(34, 60, 80, 0.18);
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
